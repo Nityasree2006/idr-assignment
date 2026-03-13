@@ -1,0 +1,304 @@
+body{
+font-family:'Inter',sans-serif;
+margin:0;
+background:#ffffff;
+color:#222;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px 40px;
+position:relative;
+}
+
+.site-title{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+font-size:30px;
+font-weight:700;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+.navbar a{
+text-decoration:none;
+color:#222;
+font-weight:500;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#FF6B00;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+background:linear-gradient(135deg,#111,#1f1f1f,#111);
+color:white;
+text-align:center;
+padding:160px 20px 120px;
+}
+
+.hero h1{
+font-size:44px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:650px;
+margin:auto;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.hero-buttons button{
+margin:10px;
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+button:hover{
+background:#e85f00;
+transform:translateY(-2px);
+}
+
+.outline{
+background:none;
+border:2px solid white;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+/* ---------------- SERVICE PILLARS ---------------- */
+
+.cards{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:25px;
+flex:1;
+min-width:250px;
+border-radius:10px;
+border-top:4px solid #ff6b00;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card h3{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+font-size:20px;
+}
+
+/* ---------------- WHY IDR ---------------- */
+
+.why{
+background:#fafafa;
+}
+
+.why-grid{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:25px;
+}
+
+.why-card{
+background:white;
+padding:22px;
+max-width:260px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.why-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ---------------- PIPELINE ---------------- */
+
+.pipeline{
+background:#f7f7f7;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.step{
+padding:15px 25px;
+border-radius:30px;
+font-weight:600;
+border:2px solid #ff6b00;
+background:white;
+transition:0.3s;
+cursor:pointer;
+}
+
+.step:hover{
+background:#ff6b00;
+color:white;
+transform:scale(1.07);
+}
+
+/* ---------------- COMMUNITY ---------------- */
+
+#community{
+margin-bottom:20px;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+.contact{
+text-align:center;
+background:#f7f7f7;
+padding:80px 20px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:30px auto;
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact input,
+.contact textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+width:100%;
+box-sizing:border-box;
+}
+
+.contact textarea{
+height:100px;
+resize:none;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+outline:none;
+border-color:#ff6b00;
+box-shadow:0 0 6px rgba(255,107,0,0.3);
+}
+
+.contact button{
+background:#ff6b00;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact button:hover{
+background:#e85f00;
+transform:translateY(-2px);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.site-title{
+position:static;
+transform:none;
+}
+
+.cards{
+flex-direction:column;
+}
+
+.steps{
+flex-direction:column;
+}
+
+}
